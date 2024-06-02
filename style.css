@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #1d1d1d;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid #fff;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-wrap: wrap;
+  width: 35%;
+}
+.logo h1 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+.logo h1 a {
+  text-decoration: none;
+}
+.logo h1 a:hover {
+  border-bottom: 1px solid #fff;
+}
+.logo span {
+  font-size: 12px;
+}
+
+.list {
+  width: 65%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 4px;
+}
+.list #audioBtn i{
+  margin-right: 10px;
+}
+.list li {
+  list-style: none;
+  border: 2px solid #333131;
+  padding: 4px 10px;
+  transition: 0.4s ease-in-out;
+}
+.list li a {
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.list li:hover {
+  background: #fff;
+}
+.list li:hover a,
+.list li:hover i {
+  color: #1d1d1d;
+}
+.list li i {
+  font-size: 17px;
+}
+.navbar #bar {
+  display: none;
+}
+/* ############################## section 1 styling ##################### */
+
+.sec-1{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-1 a{
+  font-size: 140px;
+  animation: play 1.5s infinite ;
+}
+@keyframes play{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+/* ######## exit box ############### */
+.exitBox{
+  width: 320px;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #fff;
+  border-radius: 10px;
+  position: absolute;
+  display: none;
+  animation: popup 0.4s ease-in-out forwards;
+  z-index: 21;
+}
+@keyframes popup {
+  0%{
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.exitBox h3{
+  font-size: 30px;
+  color: #000;
+  font-weight: 500;
+}
+.exitBox .btnBox{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btnBox button{
+  width: 70px;
+  padding: 4px 0;
+  border: none;
+  border-radius: 7px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btnBox #noBtn{
+  border: 1px solid #000;
+  background-color: #Fff;
+  transition: 0.3s ease-in-out;
+}
+.btnBox #noBtn:hover{
+  background-color: #000;
+  color: #fff;
+}
+.btnBox #yesBtn{
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.btnBox #yesBtn:hover{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000  ;
+}
+
+/* ######################### media query ######################## */
+
+@media (max-width: 905px) {
+  .navbar {
+    position: relative;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .navbar .logo {
+    width: 85%;
+  }
+  .navbar .logo h1 {
+    z-index: 2020;
+  }
+  .navbar #bar {
+    display: block;
+    font-size: 50px;
+    cursor: pointer;
+    width: 15%;
+    text-align: center;
+    z-index: 116;
+    color: #fff;
+    padding-right: 10px;
+  }
+  .list {
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: -450px;
+    right: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-right: 0;
+    padding: 20px 10px;
+    padding-top: 70px;
+    transition: 0.4s ease-in-out;
+    z-index: 15;
+  }
+  .list li {
+    width: 100%;
+    height: 45px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  .list li:hover {
+    background: #1d1d1d;
+  }
+  .list li:hover a,
+  .list li:hover i {
+    color: #fff;
+  }
+  .list li a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #1d1d1d;
+  }
+  .list li i {
+    color: #1d1d1d;
+    margin-right: 10px;
+  }
+}
