@@ -92,7 +92,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+  /* display: none; */
 }
 .sec-1 a{
   font-size: 140px;
@@ -218,6 +218,7 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 0 10px;
+  display: none;
 }
 
 .level-1 h1{
