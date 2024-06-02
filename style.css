@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .navbar {
   width: 100%;
@@ -92,6 +92,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 .sec-1 a{
   font-size: 140px;
@@ -112,7 +113,6 @@ body {
 .exitBox{
   width: 320px;
   height: 150px;
-  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
@@ -120,19 +120,21 @@ body {
   background: #fff;
   border-radius: 10px;
   position: absolute;
+  top: 50%;
+  left: 50%;
   display: none;
   animation: popup 0.4s ease-in-out forwards;
   z-index: 21;
 }
 @keyframes popup {
   0%{
-    transform: scale(0);
+    transform: scale(0) translate(-50%,-50%);
   }
   50%{
-    transform: scale(1.5);
+    transform: scale(1.5) translate(-50%,-50%);
   }
   100%{
-    transform: scale(1);
+    transform: scale(1) translate(-50%,-50%);
   }
 }
 .exitBox h3{
@@ -177,6 +179,87 @@ body {
   border: 1px solid #000  ;
 }
 
+.loading{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: none;
+}
+.loading .loadBar{
+  width: 550px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.loadBar .loadLine{
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
+}
+.loading span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ######################### level section styling ########################## */
+.level-1{
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10px;
+}
+
+.level-1 h1{
+  font-size: 30px;
+  margin-bottom: 150px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.level-1 .questionBox{
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ######################### media query ######################## */
 
 @media (max-width: 905px) {
@@ -188,9 +271,12 @@ body {
   }
   .navbar .logo {
     width: 85%;
+    justify-content: flex-start;
+    padding-left: 10px;
   }
   .navbar .logo h1 {
     z-index: 2020;
+    font-weight: 900;
   }
   .navbar #bar {
     display: block;
@@ -204,25 +290,31 @@ body {
   }
   .list {
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
     background-color: #fff;
     position: absolute;
-    top: -450px;
+    top: -500px;
     right: 0px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
     padding-right: 0;
     padding: 20px 10px;
     padding-top: 70px;
     transition: 0.4s ease-in-out;
     z-index: 15;
+    border-bottom-left-radius: 30px;
   }
   .list li {
-    width: 100%;
-    height: 45px;
-    margin: 20px 0;
+    width: 60%;
+    margin: 10px 0;
+    padding: 15px 10px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    word-break: break-all;
   }
   .list li:hover {
     background: #1d1d1d;
@@ -236,9 +328,11 @@ body {
     align-items: center;
     height: 100%;
     color: #1d1d1d;
+    font-size: 17px;
   }
   .list li i {
     color: #1d1d1d;
     margin-right: 10px;
   }
 }
+

@@ -6,39 +6,92 @@
     <title>Math || Riddle</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- ########## font awesome link ########## -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  </head>
-  <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      />
+    </head>
+    <body>
+    <div class="exitBox">
+      <h3>Do you Want to Exit ?</h3>
+      <div class="btnBox">
+        <button id="noBtn">NO</button>
+        <button id="yesBtn">YES</button>
+      </div>
+    </div>
     <nav class="navbar">
       <div class="logo">
         <h1><a href="./index.html">MATH RIDDLE</a></h1>
         <span>ver 1.27</span>
       </div>
-        <ul class="list">
-          <li><a href="#"><i class="fa-solid fa-table-cells"></i> LEVELS</a></li>
-          <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i> FOLLOW US</a></li>
-          <li><a href="#" id="audioBtn"><i class="fa-solid fa-volume-high"></i> SOUND ON</a></li>
-          <li><a href="#"><i class="fa-solid fa-gear"></i> SETTINGS</a></li>
-          <li><a href="#" id="exitGame"><i class="fa-solid fa-xmark"></i> EXIT</a></li>
-        </ul>
-        <i class="fa-solid fa-bars" id="bar"></i>
+      <ul class="list">
+        <li>
+          <a href="#"><i class="fa-solid fa-table-cells"></i> LEVELS</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/codewithfun764/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i> FOLLOW US</a
+          >
+        </li>
+        <li>
+          <a href="#" id="audioBtn"
+            ><i class="fa-solid fa-volume-high"></i> SOUND ON</a
+          >
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-gear"></i> SETTINGS</a>
+        </li>
+        <li>
+          <a href="#" id="exitGame"><i class="fa-solid fa-xmark"></i> EXIT</a>
+        </li>
+      </ul>
+      <i class="fa-solid fa-bars" id="bar"></i>
     </nav>
     <!-- ############ section 1 ######################## -->
 
     <section class="sec-1">
-      <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+      <a href="#" id="playGame"><i class="fa-regular fa-circle-play"></i></a>
       <audio src="./sound/main-background.mp3" loop id="audio"></audio>
 
-<!-- ################## exit box ################### -->
-<div class="exitBox">
-  <h3>Do you Want to Exit ?</h3>
-  <div class="btnBox">
-    <button id="noBtn">NO</button>
-    <button id="yesBtn">YES</button>
-  </div>
-</div>
+      <!-- ################## exit box ################### -->
     </section>
 
+    <!-- ##################### loading bar ################### -->
+    <section class="loading">
+      <div class="loadBar">
+        <div class="loadLine"></div>
+      </div>
+      <span>0%</span>
+    </section>
+
+    <section class="level-1">
+      <h1>Level <span>1</span></h1>
+
+      <div class="questionBox">
+        <h1>4,8,16,?</h1>
+      </div>
+
+      <div class="checking">
+        <div class="inputBox">
+          <input type="text" id="answer">
+          <button id="hint"><i class="fa-solid fa-lightbulb"></i></button>
+          <button id="hint">Enter</button>
+        </div>
+        <div class="buttonBox">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>0</button>
+        </div>
+      </div>
+
+    </section>
     <!-- ################ Script File ################## -->
     <script src="script.js"></script>
   </body>
