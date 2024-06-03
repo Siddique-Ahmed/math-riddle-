@@ -92,7 +92,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* display: none; */
 }
 .sec-1 a{
   font-size: 140px;
@@ -111,7 +110,7 @@ body {
 }
 /* ######## exit box ############### */
 .exitBox{
-  width: 320px;
+  min-width: 320px;
   height: 150px;
   flex-wrap: wrap;
   flex-direction: column;
@@ -181,7 +180,7 @@ body {
 
 .loading{
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,40 +209,95 @@ body {
 }
 
 /* ######################### level section styling ########################## */
-.level-1{
+.levelContainer{
   width: 100%;
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
+  min-height: 86vh;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  padding: 0 10px;
+  flex-wrap: wrap;
   display: none;
 }
-
-.level-1 h1{
-  font-size: 30px;
-  margin-bottom: 150px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  align-self: flex-start;
-}
-
-.level-1 .questionBox{
-  width: 400px;
+.levelContainer .level-1{
+  width: 100%;
+  height: 50vh;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
-
-
-
-
-
-
-
-
-
+.level-1 h1{
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.level-1 .questionBox h1{
+ font-size: 30px;
+ font-weight: 400;
+}
+.level-1 .checking{
+  width: 290px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.level-1 .checking .inputBox{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.checking .inputBox input{
+width: 55%;
+height: 100%;
+border-radius: 5px;
+outline: none;
+border: none;
+font-size: 14px;
+background-color: #292626;
+box-shadow: 0 0 3px #fff;
+padding: 0 13px;
+}
+.checking .inputBox input::placeholder{
+  color: #eee;
+}
+.checking .inputBox button{
+  width: 18%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #292626;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 2px #bbb;
+}
+.checking .inputBox button:hover{
+  background-color: #000;
+}
+.checking .inputBox .buttonBox{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+}
+.checking .inputBox .buttonBox button{
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
+.checking .inputBox .buttonBox button:hover{
+  background-color: #000;
+}
 
 
 
@@ -278,10 +332,11 @@ body {
   .navbar .logo h1 {
     z-index: 2020;
     font-weight: 900;
+    font-size: 19 px;
   }
   .navbar #bar {
     display: block;
-    font-size: 50px;
+    font-size: 30px;
     cursor: pointer;
     width: 15%;
     text-align: center;
@@ -300,16 +355,16 @@ body {
     top: -500px;
     right: 0px;
     padding-right: 0;
-    padding: 20px 10px;
+    padding: 10px 8px;
     padding-top: 70px;
     transition: 0.4s ease-in-out;
     z-index: 15;
     border-bottom-left-radius: 30px;
   }
   .list li {
-    width: 60%;
-    margin: 10px 0;
-    padding: 15px 10px;
+    width: 80%;
+    margin: 8px 0;
+    padding: 10px 7px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -327,13 +382,30 @@ body {
   .list li a {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     height: 100%;
     color: #1d1d1d;
-    font-size: 17px;
+    font-size: 15px;
   }
   .list li i {
     color: #1d1d1d;
-    margin-right: 10px;
+    margin-right: 8px;
   }
+  .sec-1 a{
+    font-size: 50px;
+  }
+  .loading .loadBar{
+    width: 200px;
+    height: 20px;
+  }
+  .loading span{
+    font-size: 15px;
+  }
+
+
 }
+
+
+
+
 

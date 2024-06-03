@@ -9,9 +9,9 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      />
-    </head>
-    <body>
+    />
+  </head>
+  <body>
     <div class="exitBox">
       <h3>Do you Want to Exit ?</h3>
       <div class="btnBox">
@@ -62,36 +62,40 @@
         <div class="loadLine"></div>
       </div>
       <span>0%</span>
+      <audio src="./sound/loading sound.mp3" loop id="loadAudio"></audio>
     </section>
 
-    <section class="level-1">
-      <h1>Level <span>1</span></h1>
+    <!-- ################ level one ################## -->
+    <main class="levelContainer">
+      <section class="level-1">
+        <h1>Level <span>1</span></h1>
 
-      <div class="questionBox">
-        <h1>4,8,16,?</h1>
-      </div>
-
-      <div class="checking">
-        <div class="inputBox">
-          <input type="text" id="answer">
-          <button id="hint"><i class="fa-solid fa-lightbulb"></i></button>
-          <button id="hint">Enter</button>
+        <div class="questionBox">
+          <h1>4,8,16,?</h1>
         </div>
-        <div class="buttonBox">
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>0</button>
-        </div>
-      </div>
+        <p id="wrongAnswer">wrong! Try Again</p>
 
-    </section>
+        <div class="checking">
+          <div class="inputBox">
+            <input type="number" id="answer" placeholder="Enter answer" />
+            <button id="hint"><i class="fa-solid fa-lightbulb"></i></button>
+            <button id="hint">Enter</button>
+            <div class="buttonBox">
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+              <button>4</button>
+              <button>5</button>
+              <button>6</button>
+              <button>7</button>
+              <button>8</button>
+              <button>9</button>
+              <button>0</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- ################ Script File ################## -->
     <script src="script.js"></script>
   </body>

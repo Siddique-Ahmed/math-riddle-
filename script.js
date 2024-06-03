@@ -24,13 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
   let audioButton = document.querySelector("#audioBtn");
   let audio = document.querySelector("#audio");
 
-  // audio.play();
   audio.volume = 0.6;
 
   audioButton.addEventListener("click", () => {
     if (audio.paused) {
-      audioButton.textContent = "SOUND ON";
       audio.play();
+      loadingSound.pause();
+      audioButton.textContent = "SOUND ON";
       let i = document.createElement("i");
       i.classList.add("fa-solid", "fa-volume-high");
       audioButton.appendChild(i);
@@ -79,28 +79,29 @@ noBtn.addEventListener("click", () => {
 // ################# play Game ######################### \\
 
 let playBtn = document.querySelector("#playGame");
-let sectoion1 = document.querySelector(".sec-1");
+let section1 = document.querySelector(".sec-1");
 let loadingSec = document.querySelector(".loading");
+let loadingSound = document.querySelector("#loadAudio");
+let audio = document.querySelector("#audio");
 
 playBtn.addEventListener("click", () => {
-  if (sectoion1.style.display === "flex") {
-    loadingSec.style.display = "none";
-    sectoion1.style.display = "flex";
-  } else {
-    sectoion1.style.display = "none";
-    loadingSec.style.display = "flex";
-  }
+  section1.style.display = "none";
+  loadingSec.style.display = "flex";
+  audio.pause();
+  loadingSound.play();
+  startLoadingBar();
 });
+
 
 // ############## loading section ################# \\
 
 let loadline = document.querySelector(".loadLine");
 let span = document.querySelector(".loading span");
+let levelContainer = document.querySelector(".levelContainer")
 
-document.addEventListener("DOMContentLoaded", () => {
+function startLoadingBar() {
   let count = 0;
-
-  setInterval(() => {
+  let loadingInterval = setInterval(() => {
     if (count < 100) {
       count++;
       loadline.style.width = `${count}%`;
@@ -110,7 +111,15 @@ document.addEventListener("DOMContentLoaded", () => {
       span.style.color = "#000";
     }
     if (count == 100) {
+      clearInterval(loadingInterval); 
       loadingSec.style.display = "none";
+      levelContainer.style.display = "flex"
+      loadingSound.pause();
+      audio.play(); 
     }
   }, 160);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  audio.play();
 });
