@@ -123,3 +123,34 @@ function startLoadingBar() {
 document.addEventListener("DOMContentLoaded", () => {
   audio.play();
 });
+
+
+
+
+// ################### level list script ####################### \\
+
+  let levelBtn = document.querySelector("#levelBtn");
+  let lvl1 = document.querySelector("#lvl1")
+  let lvl2 = document.querySelector("#lvl2")
+  let lvl3 = document.querySelector("#lvl3")
+  let lvl4 = document.querySelector("#lvl4")
+  let lvl5 = document.querySelector("#lvl5")
+  let lvl6 = document.querySelector("#lvl6")
+  let lvl7 = document.querySelector("#lvl7")
+  let lvl8 = document.querySelector("#lvl8")
+  let lvl9 = document.querySelector("#lvl9")
+  let lvl10 = document.querySelector("#lvl10")
+  let levelList = document.querySelector(".levelList")
+
+
+  levelBtn.addEventListener("click",()=>{
+  if(levelList.style.display == "none"){
+    levelList.style.display = "flex"
+  }else{
+    levelList.style.display = "none"
+  }
+  })
+
+  // ################ level 1 script ###############  \\
+
+  
