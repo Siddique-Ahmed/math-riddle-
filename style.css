@@ -17,7 +17,7 @@ body {
   flex-wrap: wrap;
 }
 /* ################## hint lvl 1 styling ################# */
-.hintlvl1{
+.hintlvl1 {
   width: 150px;
   height: 150px;
   background-color: #fff;
@@ -42,14 +42,14 @@ body {
     transform: scale(1) translate(-50%, -50%);
   }
 }
-.hintlvl1 p{
+.hintlvl1 p {
   font-size: 50px;
   color: #000;
   font-weight: 900;
 }
 /* ############# hint lvl 2 ##################### */
 
-.hintlvl2{
+.hintlvl2 {
   width: 150px;
   height: 150px;
   background-color: #fff;
@@ -74,14 +74,14 @@ body {
     transform: scale(1) translate(-50%, -50%);
   }
 }
-.hintlvl2 p{
+.hintlvl2 p {
   font-size: 50px;
   color: #000;
   font-weight: 900;
 }
 /* ############# hint lvl 3 ##################### */
 
-.hintlvl3{
+.hintlvl3 {
   width: 150px;
   height: 150px;
   background-color: #fff;
@@ -106,14 +106,14 @@ body {
     transform: scale(1) translate(-50%, -50%);
   }
 }
-.hintlvl3 p{
+.hintlvl3 p {
   font-size: 50px;
   color: #000;
   font-weight: 900;
 }
 /* ############# hint lvl 4 ##################### */
 
-.hintlvl4{
+.hintlvl4 {
   width: 150px;
   height: 150px;
   background-color: #fff;
@@ -125,9 +125,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  animation: hintlvl3 0.3s ease-in-out forwards;
+  animation: hintlvl4 0.3s ease-in-out forwards;
 }
-@keyframes hintlvl3 {
+@keyframes hintlvl4 {
   0% {
     transform: scale(0) translate(-50%, -50%);
   }
@@ -138,14 +138,14 @@ body {
     transform: scale(1) translate(-50%, -50%);
   }
 }
-.hintlvl4 p{
+.hintlvl4 p {
   font-size: 50px;
   color: #000;
   font-weight: 900;
 }
 /* ############# hint lvl 5 ##################### */
 
-.hintlvl5{
+.hintlvl5 {
   width: 150px;
   height: 150px;
   background-color: #fff;
@@ -157,9 +157,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  animation: hintlvl3 0.3s ease-in-out forwards;
+  animation: hintlvl5 0.3s ease-in-out forwards;
 }
-@keyframes hintlvl3 {
+@keyframes hintlvl5 {
   0% {
     transform: scale(0) translate(-50%, -50%);
   }
@@ -170,27 +170,171 @@ body {
     transform: scale(1) translate(-50%, -50%);
   }
 }
-.hintlvl5 p{
+.hintlvl5 p {
   font-size: 50px;
   color: #000;
   font-weight: 900;
 }
+/* ############# hint lvl 6 ##################### */
 
+.hintlvl6 {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: hintlvl6 0.3s ease-in-out forwards;
+}
+@keyframes hintlvl6 {
+  0% {
+    transform: scale(0) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1.5) translate(-50%, -50%);
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+.hintlvl6 p {
+  font-size: 50px;
+  color: #000;
+  font-weight: 900;
+}
+/* ############# hint lvl 7 ##################### */
 
+.hintlvl7 {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: hintlvl7 0.3s ease-in-out forwards;
+}
+@keyframes hintlvl7 {
+  0% {
+    transform: scale(0) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1.5) translate(-50%, -50%);
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+.hintlvl7 p {
+  font-size: 50px;
+  color: #000;
+  font-weight: 900;
+}
+/* ############# hint lvl 8 ##################### */
 
+.hintlvl8 {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: hintlvl8 0.3s ease-in-out forwards;
+}
+@keyframes hintlvl8 {
+  0% {
+    transform: scale(0) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1.5) translate(-50%, -50%);
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+.hintlvl8 p {
+  font-size: 50px;
+  color: #000;
+  font-weight: 900;
+}
+/* ############# hint lvl 9 ##################### */
 
+.hintlvl9 {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: hintlvl9 0.3s ease-in-out forwards;
+}
+@keyframes hintlvl9 {
+  0% {
+    transform: scale(0) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1.5) translate(-50%, -50%);
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+.hintlvl9 p {
+  font-size: 50px;
+  color: #000;
+  font-weight: 900;
+}
+/* ############# hint lvl 10 ##################### */
 
-
-
-
-
-
-
-
-
-
-
-
+.hintlvl10 {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: hintlvl10 0.3s ease-in-out forwards;
+}
+@keyframes hintlvl10 {
+  0% {
+    transform: scale(0) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1.5) translate(-50%, -50%);
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+.hintlvl10 p {
+  font-size: 50px;
+  color: #000;
+  font-weight: 900;
+}
 
 /* ############### navbar styling ####################### */
 .navbar {
@@ -774,7 +918,396 @@ body {
 .checking .inputBox button:hover {
   background-color: #000;
 }
+/* ######################### level 6 ########################## */
+.levelContainer .level-6 {
+  width: 100%;
+  height: 70vh;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.level-6 h1 {
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.level-6 .questionBox h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.level-6 .checking {
+  width: 290px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.level-6 .checking .inputBox {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.checking .inputBox input {
+  width: 55%;
+  height: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  background-color: #292626;
+  box-shadow: 0 0 3px #fff;
+  padding: 0 13px;
+}
+.checking .inputBox input::placeholder {
+  color: #eee;
+}
+.checking .inputBox button {
+  width: 18%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #292626;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 2px #bbb;
+}
+.checking .inputBox button:hover {
+  background-color: #000;
+}
+/* ######################### level 7 ########################## */
+.levelContainer .level-7 {
+  width: 100%;
+  height: 70vh;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.level-7 h1 {
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.level-7 .questionBox h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.level-7 .checking {
+  width: 290px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.level-7 .checking .inputBox {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.checking .inputBox input {
+  width: 55%;
+  height: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  background-color: #292626;
+  box-shadow: 0 0 3px #fff;
+  padding: 0 13px;
+}
+.checking .inputBox input::placeholder {
+  color: #eee;
+}
+.checking .inputBox button {
+  width: 18%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #292626;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 2px #bbb;
+}
+.checking .inputBox button:hover {
+  background-color: #000;
+}
+/* ######################### level 8 ########################## */
+.levelContainer .level-8 {
+  width: 100%;
+  height: 70vh;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.level-8 h1 {
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.level-8 .questionBox h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.level-8 .checking {
+  width: 290px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.level-8 .checking .inputBox {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.checking .inputBox input {
+  width: 55%;
+  height: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  background-color: #292626;
+  box-shadow: 0 0 3px #fff;
+  padding: 0 13px;
+}
+.checking .inputBox input::placeholder {
+  color: #eee;
+}
+.checking .inputBox button {
+  width: 18%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #292626;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 2px #bbb;
+}
+.checking .inputBox button:hover {
+  background-color: #000;
+}
+/* ######################### level 9 ########################## */
+.levelContainer .level-9 {
+  width: 100%;
+  height: 70vh;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.level-9 h1 {
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.level-9 .questionBox h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.level-9 .checking {
+  width: 290px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.level-9 .checking .inputBox {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.checking .inputBox input {
+  width: 55%;
+  height: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  background-color: #292626;
+  box-shadow: 0 0 3px #fff;
+  padding: 0 13px;
+}
+.checking .inputBox input::placeholder {
+  color: #eee;
+}
+.checking .inputBox button {
+  width: 18%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #292626;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 2px #bbb;
+}
+.checking .inputBox button:hover {
+  background-color: #000;
+}
+/* ######################### level 10 ########################## */
+.levelContainer .level-10 {
+  width: 100%;
+  height: 70vh;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.level-10 h1 {
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.level-10 .questionBox h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.level-10 .checking {
+  width: 290px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.level-10 .checking .inputBox {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.checking .inputBox input {
+  width: 55%;
+  height: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  background-color: #292626;
+  box-shadow: 0 0 3px #fff;
+  padding: 0 13px;
+}
+.checking .inputBox input::placeholder {
+  color: #eee;
+}
+.checking .inputBox button {
+  width: 18%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #292626;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 2px #bbb;
+}
+.checking .inputBox button:hover {
+  background-color: #000;
+}
+/* ################ back to home ################ */
+.backHomeBox {
+  background-color: #fff;
+  width: 340px;
+  height: 240px;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: backhome 0.3s ease-in-out forwards;
+}
 
+@keyframes backhome {
+  0% {
+    transform: scale(0) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1.2) translate(-50%, -50%);
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+.backHomeBox h3 {
+  font-size: 30px;
+  color: #000;
+  font-weight: 400;
+}
+.backHomeBox .backBtnBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px 0;
+}
+.backBtnBox button {
+  background: #fff;
+  color: #000;
+  width: 110px;
+  padding: 7px 0;
+  border-radius: 5px;
+  border: 1px solid #1d1d1d;
+  outline: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.backBtnBox #retry {
+  background: #000;
+  color: #fff;
+}
+.backBtnBox #retry:hover {
+  background: #fff;
+  color: #000;
+}
+.backBtnBox #backHome:hover {
+  background: #000;
+  color: #fff;
+}
 /* ######################### media query ######################## */
 
 @media (max-width: 905px) {
@@ -881,5 +1414,9 @@ body {
   }
   .levelList li:hover a {
     color: #1d1d1d;
+  }
+
+  .backHomeBox {
+    width: 290px;
   }
 }

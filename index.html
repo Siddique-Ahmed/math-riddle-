@@ -12,47 +12,49 @@
     />
   </head>
   <body>
+    <!-- ############### hint box for level 1 ############### -->
+    <div class="hintlvl1">
+      <p>X2</p>
+    </div>
+    <!-- ###### level 2 ############## -->
+    <div class="hintlvl2">
+      <p>X +</p>
+    </div>
+    <!-- ###### level 3 ############## -->
+    <div class="hintlvl3">
+      <p>5</p>
+    </div>
+    <!-- ###### level 4 ############## -->
+    <div class="hintlvl4">
+      <p>7</p>
+    </div>
+    <!-- ###### level 5 ############## -->
+    <div class="hintlvl5">
+      <p>X + -</p>
+    </div>
+    <!-- ###### level 6 ############## -->
+    <div class="hintlvl6">
+      <p>A B</p>
+      <p>+ A B</p>
+    </div>
+    <!-- ###### level 7 ############## -->
+    <div class="hintlvl7">
+      <p>+</p>
+    </div>
+    <!-- ###### levell8 ############## -->
+    <div class="hintlvl8">
+      <p>/ X -</p>
+    </div>
+    <!-- ###### level 9 ############## -->
+    <div class="hintlvl9">
+      <p>+n</p>
+    </div>
+    <!-- ###### level 10 ############## -->
+    <div class="hintlvl10">
+      <p>X</p>
+    </div>
 
-  <!-- ############### hint box for level 1 ############### -->
-<div class="hintlvl1">
-  <p>X2</p>
-</div>
-<!-- ###### level 2 ############## -->
-<div class="hintlvl2">
-  <p>X +</p>
-</div>
-<!-- ###### level 3 ############## -->
-<div class="hintlvl3">
-  <p>5</p>
-</div>
-<!-- ###### level 4 ############## -->
-<div class="hintlvl4">
-  <p>7</p>
-</div>
-<!-- ###### level 5 ############## -->
-<div class="hintlvl5">
-  <p>X + -</p>
-</div>
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-<!-- ################ exit box ################     -->
+    <!-- ################ exit box ################     -->
     <div class="exitBox">
       <h3>Do you Want to Exit ?</h3>
       <div class="btnBox">
@@ -61,19 +63,19 @@
       </div>
     </div>
     <!-- ################ level list ################## -->
-      <ul class="levelList">
-        <li><a href="#" id="lvl1">LEVEL 1</a></li>
-        <li><a href="#" id="lvl2">LEVEL 2</a></li>
-        <li><a href="#" id="lvl3">LEVEL 3</a></li>
-        <li><a href="#" id="lvl4">LEVEL 4</a></li>
-        <li><a href="#" id="lvl5">LEVEL 5</a></li>
-        <li><a href="#" id="lvl6">LEVEL 6</a></li>
-        <li><a href="#" id="lvl7">LEVEL 7</a></li>
-        <li><a href="#" id="lvl8">LEVEL 8</a></li>
-        <li><a href="#" id="lvl9">LEVEL 9</a></li>
-        <li><a href="#" id="lvl10">LEVEL 10</a></li>
-      </ul>
-      <!-- ################### navbar ################## -->
+    <ul class="levelList">
+      <li id="lvl1"><a href="#">LEVEL 1</a></li>
+      <li id="lvl2"><a href="#">LEVEL 2</a></li>
+      <li id="lvl3"><a href="#">LEVEL 3</a></li>
+      <li id="lvl4"><a href="#">LEVEL 4</a></li>
+      <li id="lvl5"><a href="#">LEVEL 5</a></li>
+      <li id="lvl6"><a href="#">LEVEL 6</a></li>
+      <li id="lvl7"><a href="#">LEVEL 7</a></li>
+      <li id="lvl8"><a href="#">LEVEL 8</a></li>
+      <li id="lvl9"><a href="#">LEVEL 9</a></li>
+      <li id="lvl10"><a href="#">LEVEL 10</a></li>
+    </ul>
+    <!-- ################### navbar ################## -->
     <nav class="navbar">
       <div class="logo">
         <h1><a href="./index.html">MATH RIDDLE</a></h1>
@@ -81,7 +83,9 @@
       </div>
       <ul class="list">
         <li>
-          <a href="#" id="levelBtn"><i class="fa-solid fa-table-cells"></i> LEVELS</a>
+          <a href="#" id="levelBtn"
+            ><i class="fa-solid fa-table-cells"></i> LEVELS</a
+          >
         </li>
         <li>
           <a href="https://www.instagram.com/codewithfun764/" target="_blank"
@@ -144,7 +148,7 @@
         <h1>Level <span>2</span></h1>
 
         <div class="questionBox">
-          <h1>2 + 2 X  2 = ?</h1>
+          <h1>2 + 2 X 2 = ?</h1>
         </div>
         <p id="wrongAnswer2"></p>
 
@@ -198,7 +202,7 @@
         <h1>Level <span>5</span></h1>
 
         <div class="questionBox">
-          <h1>5 + 5 X 5 - 5 =  ?</h1>
+          <h1>5 + 5 X 5 - 5 = ?</h1>
         </div>
         <p id="wrongAnswer5"></p>
 
@@ -210,7 +214,108 @@
           </div>
         </div>
       </section>
+      <!-- ############## level 6 ############### -->
+      <section class="level-6">
+        <h1>Level <span>6</span></h1>
+
+        <div class="questionBox">
+          <h1>A + B = 60</h1>
+          <h1>A - B = 40</h1>
+          <h1>A / B = ?</h1>
+        </div>
+        <p id="wrongAnswer6"></p>
+
+        <div class="checking">
+          <div class="inputBox">
+            <input type="number" id="answer6" placeholder="Enter answer" />
+            <button id="hint6"><i class="fa-solid fa-lightbulb"></i></button>
+            <button id="btnlvl6">Enter</button>
+          </div>
+        </div>
+      </section>
+      <!-- ############## level 7 ############### -->
+      <section class="level-7">
+        <h1>Level <span>7</span></h1>
+
+        <div class="questionBox">
+          <h1>13,18 = 31</h1>
+          <h1>7,25 = 32</h1>
+          <h1>12,30 = 42</h1>
+          <h1>26,13 = ?</h1>
+        </div>
+        <p id="wrongAnswer7"></p>
+
+        <div class="checking">
+          <div class="inputBox">
+            <input type="number" id="answer7" placeholder="Enter answer" />
+            <button id="hint7"><i class="fa-solid fa-lightbulb"></i></button>
+            <button id="btnlvl7">Enter</button>
+          </div>
+        </div>
+      </section>
+      <!-- ############## level 8 ############### -->
+      <section class="level-8">
+        <h1>Level <span>8</span></h1>
+
+        <div class="questionBox">
+          <h1>8 - 8 / 4 X 3 = ?</h1>
+        </div>
+        <p id="wrongAnswer8"></p>
+
+        <div class="checking">
+          <div class="inputBox">
+            <input type="number" id="answer8" placeholder="Enter answer" />
+            <button id="hint8"><i class="fa-solid fa-lightbulb"></i></button>
+            <button id="btnlvl8">Enter</button>
+          </div>
+        </div>
+      </section>
+      <!-- ############## level 9 ############### -->
+      <section class="level-9">
+        <h1>Level <span>9</span></h1>
+
+        <div class="questionBox">
+          <h1>11,15,20,?</h1>
+        </div>
+        <p id="wrongAnswer9"></p>
+
+        <div class="checking">
+          <div class="inputBox">
+            <input type="number" id="answer9" placeholder="Enter answer" />
+            <button id="hint9"><i class="fa-solid fa-lightbulb"></i></button>
+            <button id="btnlvl9">Enter</button>
+          </div>
+        </div>
+      </section>
+      <!-- ############## level 10 ############### -->
+      <section class="level-10">
+        <h1>Level <span>10</span></h1>
+
+        <div class="questionBox">
+          <h1>4,8 = 32</h1>
+          <h1>5,3 = 15</h1>
+          <h1>10,2 = 20</h1>
+          <h1>8,6 = ?</h1>
+        </div>
+        <p id="wrongAnswer10"></p>
+
+        <div class="checking">
+          <div class="inputBox">
+            <input type="number" id="answer10" placeholder="Enter answer" />
+            <button id="hint10"><i class="fa-solid fa-lightbulb"></i></button>
+            <button id="btnlvl10">Enter</button>
+          </div>
+        </div>
+      </section>
     </main>
+    <div class="backHomeBox">
+      <h3>BACK TO HOME</h3>
+      <h3>LEVEL COMPLETED</h3>
+      <div class="backBtnBox">
+        <button id="retry">Retry</button>
+        <button id="backHome">Back Home</button>
+      </div>
+    </div>
     <!-- ################ Script File ################## -->
     <script src="script.js"></script>
   </body>

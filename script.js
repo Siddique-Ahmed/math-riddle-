@@ -62,7 +62,7 @@ exitGame.addEventListener("click", () => {
 });
 
 function exitWindow() {
-  document.body.style.opacity = "0";
+  window.location.href = "https://www.google.com";
 }
 
 function hideBox() {
@@ -108,7 +108,6 @@ function startLoadingBar() {
       loadline.style.width = `${count}%`;
       span.textContent = `${count}%`;
       levelContainer.style.display = "none";
-
     }
     if (count > 50) {
       span.style.color = "#000";
@@ -120,9 +119,9 @@ function startLoadingBar() {
       loadingSound.pause();
       audio.play();
     }
-  }, 160);
-  if(levelContainer.style.display = "flex"){
-    seclvl1.style.display = "flex"
+  }, 100);
+  if ((levelContainer.style.display = "flex")) {
+    seclvl1.style.display = "flex";
   }
 }
 
@@ -153,6 +152,157 @@ levelBtn.addEventListener("click", () => {
   }
 });
 
+lvl1.addEventListener("click", () => {
+  levelContainer.style.display = "flex";
+  section1.style.display = "none";
+  seclvl1.style.display = "flex";
+  levelList.style.display = "none";
+  seclvl2.style.display = "none";
+  seclvl3.style.display = "none";
+  seclvl4.style.display = "none";
+  seclvl5.style.display = "none";
+  seclvl6.style.display = "none";
+  seclvl7.style.display = "none";
+  seclvl8.style.display = "none";
+  seclvl9.style.display = "none";
+  seclvl10.style.display = "none";
+});
+lvl2.addEventListener("click", () => {
+  levelContainer.style.display = "flex";
+  section1.style.display = "none";
+  seclvl2.style.display = "flex";
+  levelList.style.display = "none";
+  seclvl1.style.display = "none";
+  seclvl3.style.display = "none";
+  seclvl4.style.display = "none";
+  seclvl5.style.display = "none";
+  seclvl6.style.display = "none";
+  seclvl7.style.display = "none";
+  seclvl8.style.display = "none";
+  seclvl9.style.display = "none";
+  seclvl10.style.display = "none";
+});
+lvl3.addEventListener("click", () => {
+  levelContainer.style.display = "flex";
+  section1.style.display = "none";
+  seclvl3.style.display = "flex";
+  levelList.style.display = "none";
+  seclvl2.style.display = "none";
+  seclvl1.style.display = "none";
+  seclvl4.style.display = "none";
+  seclvl5.style.display = "none";
+  seclvl6.style.display = "none";
+  seclvl7.style.display = "none";
+  seclvl8.style.display = "none";
+  seclvl9.style.display = "none";
+  seclvl10.style.display = "none";
+});
+lvl4.addEventListener("click", () => {
+  levelContainer.style.display = "flex";
+  section1.style.display = "none";
+  seclvl4.style.display = "flex";
+  levelList.style.display = "none";
+  seclvl2.style.display = "none";
+  seclvl3.style.display = "none";
+  seclvl1.style.display = "none";
+  seclvl5.style.display = "none";
+  seclvl6.style.display = "none";
+  seclvl7.style.display = "none";
+  seclvl8.style.display = "none";
+  seclvl9.style.display = "none";
+  seclvl10.style.display = "none";
+});
+lvl5.addEventListener("click", () => {
+  levelContainer.style.display = "flex";
+  section1.style.display = "none";
+  seclvl5.style.display = "flex";
+  levelList.style.display = "none";
+  seclvl2.style.display = "none";
+  seclvl3.style.display = "none";
+  seclvl4.style.display = "none";
+  seclvl1.style.display = "none";
+  seclvl6.style.display = "none";
+  seclvl7.style.display = "none";
+  seclvl8.style.display = "none";
+  seclvl9.style.display = "none";
+  seclvl10.style.display = "none";
+});
+lvl6.addEventListener("click", () => {
+  levelContainer.style.display = "flex";
+  section1.style.display = "none";
+  seclvl6.style.display = "flex";
+  levelList.style.display = "none";
+  seclvl2.style.display = "none";
+  seclvl3.style.display = "none";
+  seclvl4.style.display = "none";
+  seclvl5.style.display = "none";
+  seclvl1.style.display = "none";
+  seclvl7.style.display = "none";
+  seclvl8.style.display = "none";
+  seclvl9.style.display = "none";
+  seclvl10.style.display = "none";
+});
+lvl7.addEventListener("click", () => {
+  levelContainer.style.display = "flex";
+  section1.style.display = "none";
+  seclvl7.style.display = "flex";
+  levelList.style.display = "none";
+  seclvl2.style.display = "none";
+  seclvl3.style.display = "none";
+  seclvl4.style.display = "none";
+  seclvl5.style.display = "none";
+  seclvl6.style.display = "none";
+  seclvl1.style.display = "none";
+  seclvl8.style.display = "none";
+  seclvl9.style.display = "none";
+  seclvl10.style.display = "none";
+});
+lvl8.addEventListener("click", () => {
+  levelContainer.style.display = "flex";
+  section1.style.display = "none";
+  seclvl8.style.display = "flex";
+  levelList.style.display = "none";
+  seclvl2.style.display = "none";
+  seclvl3.style.display = "none";
+  seclvl4.style.display = "none";
+  seclvl5.style.display = "none";
+  seclvl6.style.display = "none";
+  seclvl7.style.display = "none";
+  seclvl1.style.display = "none";
+  seclvl9.style.display = "none";
+  seclvl10.style.display = "none";
+});
+lvl9.addEventListener("click", () => {
+  levelContainer.style.display = "flex";
+  section1.style.display = "none";
+  seclvl9.style.display = "flex";
+  levelList.style.display = "none";
+  seclvl2.style.display = "none";
+  seclvl3.style.display = "none";
+  seclvl4.style.display = "none";
+  seclvl5.style.display = "none";
+  seclvl6.style.display = "none";
+  seclvl7.style.display = "none";
+  seclvl8.style.display = "none";
+  seclvl1.style.display = "none";
+  seclvl10.style.display = "none";
+});
+lvl10.addEventListener("click", () => {
+  levelContainer.style.display = "flex";
+  section1.style.display = "none";
+  seclvl10.style.display = "flex";
+  levelList.style.display = "none";
+  seclvl2.style.display = "none";
+  seclvl3.style.display = "none";
+  seclvl4.style.display = "none";
+  seclvl5.style.display = "none";
+  seclvl6.style.display = "none";
+  seclvl7.style.display = "none";
+  seclvl8.style.display = "none";
+  seclvl9.style.display = "none";
+  seclvl1.style.display = "none";
+});
+
 // ################ level 1 script ###############  \\
 
 let seclvl1 = document.querySelector(".level-1");
@@ -172,14 +322,14 @@ hintlvl1.addEventListener("click", () => {
 btnlvl1.addEventListener("click", () => {
   let valuelvl1 = inputlvl1.value;
   if (valuelvl1 === "32") {
-    seclvl2.style.display = "flex"
-    seclvl1.style.display = "none"
+    seclvl2.style.display = "flex";
+    seclvl1.style.display = "none";
   } else {
     wrongAnswerlvl1.textContent = "Wrong Answer! Please try again";
   }
 
   if (valuelvl1 === "") {
-    wrongAnswerlvl1.textContent = "please select answer";
+    wrongAnswerlvl1.textContent = "please Enter answer";
   }
   setTimeout(() => {
     wrongAnswerlvl1.textContent = "";
@@ -205,14 +355,14 @@ hintlvl2.addEventListener("click", () => {
 btnlvl2.addEventListener("click", () => {
   let valuelvl2 = inputlvl2.value;
   if (valuelvl2 === "6") {
-    seclvl3.style.display = "flex"
-    seclvl2.style.display = "none"
+    seclvl3.style.display = "flex";
+    seclvl2.style.display = "none";
   } else {
     wrongAnswerlvl2.textContent = "Wrong Answer! Please try again";
   }
 
   if (valuelvl2 === "") {
-    wrongAnswerlvl2.textContent = "please select answer";
+    wrongAnswerlvl2.textContent = "please Enter answer";
   }
   setTimeout(() => {
     wrongAnswerlvl2.textContent = "";
@@ -238,14 +388,14 @@ hintlvl3.addEventListener("click", () => {
 btnlvl3.addEventListener("click", () => {
   let valuelvl3 = inputlvl3.value;
   if (valuelvl3 === "10") {
-    seclvl4.style.display = "flex"
-    seclvl3.style.display = "none"
+    seclvl4.style.display = "flex";
+    seclvl3.style.display = "none";
   } else {
     wrongAnswerlvl3.textContent = "Wrong Answer! Please try again";
   }
 
   if (valuelvl3 === "") {
-    wrongAnswerlvl3.textContent = "please select answer";
+    wrongAnswerlvl3.textContent = "please Enter answer";
   }
   setTimeout(() => {
     wrongAnswerlvl3.textContent = "";
@@ -270,14 +420,14 @@ hintlvl4.addEventListener("click", () => {
 btnlvl4.addEventListener("click", () => {
   let valuelvl4 = inputlvl4.value;
   if (valuelvl4 === "25") {
-    seclvl5.style.display = "flex"
-    seclvl4.style.display = "none"
+    seclvl5.style.display = "flex";
+    seclvl4.style.display = "none";
   } else {
     wrongAnswerlvl4.textContent = "Wrong Answer! Please try again";
   }
 
   if (valuelvl4 === "") {
-    wrongAnswerlvl4.textContent = "please select answer";
+    wrongAnswerlvl4.textContent = "please Enter answer";
   }
   setTimeout(() => {
     wrongAnswerlvl4.textContent = "";
@@ -302,16 +452,208 @@ hintlvl5.addEventListener("click", () => {
 btnlvl5.addEventListener("click", () => {
   let valuelvl5 = inputlvl5.value;
   if (valuelvl5 === "25") {
-    // seclvl5.style.display = "flex"
-    seclvl5.style.display = "none"
+    seclvl6.style.display = "flex";
+    seclvl5.style.display = "none";
   } else {
     wrongAnswerlvl5.textContent = "Wrong Answer! Please try again";
   }
 
   if (valuelvl5 === "") {
-    wrongAnswerlvl5.textContent = "please select answer";
+    wrongAnswerlvl5.textContent = "please Enter answer";
   }
   setTimeout(() => {
     wrongAnswerlvl5.textContent = "";
+  }, 1000);
+});
+// ################# level 6 ###################### \\
+
+let seclvl6 = document.querySelector(".level-6");
+let inputlvl6 = document.querySelector("#answer6");
+let wrongAnswerlvl6 = document.querySelector("#wrongAnswer6");
+let hintlvl6 = document.querySelector("#hint6");
+let btnlvl6 = document.querySelector("#btnlvl6");
+let hintConlvl6 = document.querySelector(".hintlvl6");
+
+hintlvl6.addEventListener("click", () => {
+  hintConlvl6.style.display = "flex";
+  setTimeout(() => {
+    hintConlvl6.style.display = "none";
+  }, 1500);
+});
+
+btnlvl6.addEventListener("click", () => {
+  let valuelvl6 = inputlvl6.value;
+  if (valuelvl6 === "5") {
+    seclvl7.style.display = "flex";
+    seclvl6.style.display = "none";
+  } else {
+    wrongAnswerlvl6.textContent = "Wrong Answer! Please try again";
+  }
+
+  if (valuelvl6 === "") {
+    wrongAnswerlvl6.textContent = "please Enter answer";
+  }
+  setTimeout(() => {
+    wrongAnswerlvl6.textContent = "";
+  }, 1000);
+});
+// ################# level 7 ###################### \\
+
+let seclvl7 = document.querySelector(".level-7");
+let inputlvl7 = document.querySelector("#answer7");
+let wrongAnswerlvl7 = document.querySelector("#wrongAnswer7");
+let hintlvl7 = document.querySelector("#hint7");
+let btnlvl7 = document.querySelector("#btnlvl7");
+let hintConlvl7 = document.querySelector(".hintlvl7");
+
+hintlvl7.addEventListener("click", () => {
+  hintConlvl7.style.display = "flex";
+  setTimeout(() => {
+    hintConlvl7.style.display = "none";
+  }, 1500);
+});
+
+btnlvl7.addEventListener("click", () => {
+  let valuelvl7 = inputlvl7.value;
+  if (valuelvl7 === "39") {
+    seclvl8.style.display = "flex";
+    seclvl7.style.display = "none";
+  } else {
+    wrongAnswerlvl7.textContent = "Wrong Answer! Please try again";
+  }
+
+  if (valuelvl7 === "") {
+    wrongAnswerlvl7.textContent = "please Enter answer";
+  }
+  setTimeout(() => {
+    wrongAnswerlvl7.textContent = "";
+  }, 1000);
+});
+// ################# level 8 ###################### \\
+
+let seclvl8 = document.querySelector(".level-8");
+let inputlvl8 = document.querySelector("#answer8");
+let wrongAnswerlvl8 = document.querySelector("#wrongAnswer8");
+let hintlvl8 = document.querySelector("#hint8");
+let btnlvl8 = document.querySelector("#btnlvl8");
+let hintConlvl8 = document.querySelector(".hintlvl8");
+
+hintlvl8.addEventListener("click", () => {
+  hintConlvl8.style.display = "flex";
+  setTimeout(() => {
+    hintConlvl8.style.display = "none";
+  }, 1500);
+});
+
+btnlvl8.addEventListener("click", () => {
+  let valuelvl8 = inputlvl8.value;
+  if (valuelvl8 === "2") {
+    seclvl9.style.display = "flex";
+    seclvl8.style.display = "none";
+  } else {
+    wrongAnswerlvl8.textContent = "Wrong Answer! Please try again";
+  }
+
+  if (valuelvl8 === "") {
+    wrongAnswerlvl8.textContent = "please Enter answer";
+  }
+  setTimeout(() => {
+    wrongAnswerlvl8.textContent = "";
+  }, 1000);
+});
+// ################# level 9 ###################### \\
+
+let seclvl9 = document.querySelector(".level-9");
+let inputlvl9 = document.querySelector("#answer9");
+let wrongAnswerlvl9 = document.querySelector("#wrongAnswer9");
+let hintlvl9 = document.querySelector("#hint9");
+let btnlvl9 = document.querySelector("#btnlvl9");
+let hintConlvl9 = document.querySelector(".hintlvl9");
+
+hintlvl9.addEventListener("click", () => {
+  hintConlvl9.style.display = "flex";
+  setTimeout(() => {
+    hintConlvl9.style.display = "none";
+  }, 1500);
+});
+
+btnlvl9.addEventListener("click", () => {
+  let valuelvl9 = inputlvl9.value;
+  if (valuelvl9 === "26") {
+    seclvl10.style.display = "flex";
+    seclvl9.style.display = "none";
+  } else {
+    wrongAnswerlvl9.textContent = "Wrong Answer! Please try again";
+  }
+
+  if (valuelvl9 === "") {
+    wrongAnswerlvl9.textContent = "please Enter answer";
+  }
+  setTimeout(() => {
+    wrongAnswerlvl9.textContent = "";
+  }, 1000);
+});
+// ################# level 10 ###################### \\
+
+let seclvl10 = document.querySelector(".level-10");
+let inputlvl10 = document.querySelector("#answer10");
+let wrongAnswerlvl10 = document.querySelector("#wrongAnswer10");
+let hintlvl10 = document.querySelector("#hint10");
+let btnlvl10 = document.querySelector("#btnlvl10");
+let hintConlvl10 = document.querySelector(".hintlvl10");
+let backHome = document.querySelector(".backHomeBox");
+let retryBtn = document.querySelector("#retry");
+let backBtn = document.querySelector("#backHome");
+
+retryBtn.addEventListener("click", () => {
+  setTimeout(() => {
+    seclvl1.style.display = "flex";
+    inputlvl1.value = "";
+    inputlvl2.value = "";
+    inputlvl3.value = "";
+    inputlvl4.value = "";
+    inputlvl5.value = "";
+    inputlvl6.value = "";
+    inputlvl7.value = "";
+    inputlvl8.value = "";
+    inputlvl9.value = "";
+    inputlvl10.value = "";
+    backHome.style.display = "none";
+    backHome.style.display = "none";
+    levelContainer.style.display = "flex";
+  }, 800);
+});
+backBtn.addEventListener("click", () => {
+  setTimeout(() => {
+    section1.style.display = "flex";
+    seclvl1.style.display = "none";
+    backHome.style.display = "none";
+    levelContainer.style.display = "none";
+  }, 800);
+});
+
+hintlvl10.addEventListener("click", () => {
+  hintConlvl10.style.display = "flex";
+  setTimeout(() => {
+    hintConlvl10.style.display = "none";
+  }, 1500);
+});
+
+btnlvl10.addEventListener("click", () => {
+  let valuelvl10 = inputlvl10.value;
+  if (valuelvl10 === "42") {
+    setTimeout(() => {
+      backHome.style.display = "flex";
+      seclvl10.style.display = "none";
+    }, 300);
+  } else {
+    wrongAnswerlvl10.textContent = "Wrong Answer! Please try again";
+  }
+
+  if (valuelvl10 === "") {
+    wrongAnswerlvl10.textContent = "please Enter answer";
+  }
+  setTimeout(() => {
+    wrongAnswerlvl10.textContent = "";
   }, 1000);
 });
