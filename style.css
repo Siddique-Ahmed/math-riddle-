@@ -47,6 +47,134 @@ body {
   color: #000;
   font-weight: 900;
 }
+/* ############# hint lvl 2 ##################### */
+
+.hintlvl2{
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: hintlvl2 0.3s ease-in-out forwards;
+}
+@keyframes hintlvl2 {
+  0% {
+    transform: scale(0) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1.5) translate(-50%, -50%);
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+.hintlvl2 p{
+  font-size: 50px;
+  color: #000;
+  font-weight: 900;
+}
+/* ############# hint lvl 3 ##################### */
+
+.hintlvl3{
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: hintlvl3 0.3s ease-in-out forwards;
+}
+@keyframes hintlvl3 {
+  0% {
+    transform: scale(0) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1.5) translate(-50%, -50%);
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+.hintlvl3 p{
+  font-size: 50px;
+  color: #000;
+  font-weight: 900;
+}
+/* ############# hint lvl 4 ##################### */
+
+.hintlvl4{
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: hintlvl3 0.3s ease-in-out forwards;
+}
+@keyframes hintlvl3 {
+  0% {
+    transform: scale(0) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1.5) translate(-50%, -50%);
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+.hintlvl4 p{
+  font-size: 50px;
+  color: #000;
+  font-weight: 900;
+}
+/* ############# hint lvl 5 ##################### */
+
+.hintlvl5{
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: hintlvl3 0.3s ease-in-out forwards;
+}
+@keyframes hintlvl3 {
+  0% {
+    transform: scale(0) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1.5) translate(-50%, -50%);
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+.hintlvl5 p{
+  font-size: 50px;
+  color: #000;
+  font-weight: 900;
+}
 
 
 
@@ -64,8 +192,7 @@ body {
 
 
 
-
-
+/* ############### navbar styling ####################### */
 .navbar {
   width: 100%;
   height: 80px;
@@ -138,7 +265,7 @@ body {
 .sec-1 {
   width: 100%;
   height: 80vh;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -319,12 +446,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  display: flex;
+  display: none;
 }
 .levelContainer .level-1 {
   width: 100%;
   height: 50vh;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -348,6 +475,268 @@ body {
   flex-direction: column;
 }
 .level-1 .checking .inputBox {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.checking .inputBox input {
+  width: 55%;
+  height: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  background-color: #292626;
+  box-shadow: 0 0 3px #fff;
+  padding: 0 13px;
+}
+.checking .inputBox input::placeholder {
+  color: #eee;
+}
+.checking .inputBox button {
+  width: 18%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #292626;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 2px #bbb;
+}
+.checking .inputBox button:hover {
+  background-color: #000;
+}
+/* #################### level 2 styling ###################### */
+
+.levelContainer .level-2 {
+  width: 100%;
+  height: 50vh;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.level-2 h1 {
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.level-2 .questionBox h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.level-2 .checking {
+  width: 290px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.level-2 .checking .inputBox {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.checking .inputBox input {
+  width: 55%;
+  height: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  background-color: #292626;
+  box-shadow: 0 0 3px #fff;
+  padding: 0 13px;
+}
+.checking .inputBox input::placeholder {
+  color: #eee;
+}
+.checking .inputBox button {
+  width: 18%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #292626;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 2px #bbb;
+}
+.checking .inputBox button:hover {
+  background-color: #000;
+}
+
+/* ######################### level 3 ########################## */
+.levelContainer .level-3 {
+  width: 100%;
+  height: 70vh;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.level-3 h1 {
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.level-3 .questionBox h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.level-3 .checking {
+  width: 290px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.level-3 .checking .inputBox {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.checking .inputBox input {
+  width: 55%;
+  height: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  background-color: #292626;
+  box-shadow: 0 0 3px #fff;
+  padding: 0 13px;
+}
+.checking .inputBox input::placeholder {
+  color: #eee;
+}
+.checking .inputBox button {
+  width: 18%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #292626;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 2px #bbb;
+}
+.checking .inputBox button:hover {
+  background-color: #000;
+}
+/* ######################### level 4 ########################## */
+.levelContainer .level-4 {
+  width: 100%;
+  height: 70vh;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.level-4 h1 {
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.level-4 .questionBox h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.level-4 .checking {
+  width: 290px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.level-4 .checking .inputBox {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.checking .inputBox input {
+  width: 55%;
+  height: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  background-color: #292626;
+  box-shadow: 0 0 3px #fff;
+  padding: 0 13px;
+}
+.checking .inputBox input::placeholder {
+  color: #eee;
+}
+.checking .inputBox button {
+  width: 18%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #292626;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 2px #bbb;
+}
+.checking .inputBox button:hover {
+  background-color: #000;
+}
+/* ######################### level 5 ########################## */
+.levelContainer .level-5 {
+  width: 100%;
+  height: 70vh;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.level-5 h1 {
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.level-5 .questionBox h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.level-5 .checking {
+  width: 290px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.level-5 .checking .inputBox {
   width: 100%;
   height: 40px;
   display: flex;
