@@ -641,7 +641,7 @@ hintlvl10.addEventListener("click", () => {
 
 btnlvl10.addEventListener("click", () => {
   let valuelvl10 = inputlvl10.value;
-  if (valuelvl10 === "42") {
+  if (valuelvl10 === "48") {
     setTimeout(() => {
       backHome.style.display = "flex";
       seclvl10.style.display = "none";
